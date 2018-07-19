@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Shopping</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+               <h3>Mobile</h3>
+               <p>price: <b>Rs. 12999</b> </p>
+               <form action="/payment">
+                    <input type="submit" class="btn btn-info" value="Buy now">
+                    <input type="hidden" name="price" value="Rs.12999">
+               </form>
+               
+            </div>
+            <div class="col-sm-3">
+                <br>
+                    <button onclick="login()" type="button" class="btn btn-info">Login</button>
+                    <button onclick="signup()" type="button" class="btn btn-primary">Sign up</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function login(){
+            window.location.href = "/login";
+        }
+        function signup(){
+            window.location.href = "/signup";
+        }
+    </script>
+</body>
+</html>
